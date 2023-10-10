@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 public class SnakeMover : MonoBehaviour
 {
     [SerializeField] private GameObject _tailPrefab;
+    [SerializeField] private float _snakeSpeed = 0.3f;
 
     private PlayerControls _controls;
     private Vector2 _currentDirection = Vector2.right;
@@ -45,6 +46,11 @@ public class SnakeMover : MonoBehaviour
                 _tails.Insert(0, tail.transform);
                 _gameManager.AddScreenObject(tail.transform);
                 _foodEaten = false;
+
+                if (_snakeSpeed > .035f)
+                {
+                    _snakeSpeed -= .0025f;
+                }
             }
             else if(_tails.Count > 0)
             {

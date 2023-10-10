@@ -158,7 +158,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 326.7928, y: 90}
+  m_SizeDelta: {x: 297.9822, y: 90}
   m_Pivot: {x: 0.49999955, y: 0.4999992}
 --- !u!114 &41729125
 MonoBehaviour:
@@ -465,8 +465,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _wallPrefab: {fileID: 3276329806472213872, guid: d660e3de3989f56469573e377a292ca2, type: 3}
   _snakeHead: {fileID: 2390159624235479146, guid: 6f17bdf36345a364d8dfe3dcca1594ed, type: 3}
-  _startingCorner: {x: -37, y: 20}
-  _width: 60
+  _startingCorner: {x: -35, y: 20}
+  _width: 57
   _height: 40
 --- !u!1 &536894709
 GameObject:
@@ -750,8 +750,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _foodPrefab: {fileID: 6210099934040309800, guid: 93789e2ec9245b44ba24404d0486b030, type: 3}
-  _borderLeft: -36
-  _borderRight: 23
+  _borderLeft: -34
+  _borderRight: 22
   _borderTop: 19
   _borderBottom: -19
 --- !u!114 &1048586845
@@ -854,8 +854,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
-  m_fontSizeBase: 120
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

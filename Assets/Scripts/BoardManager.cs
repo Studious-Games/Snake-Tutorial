@@ -11,7 +11,7 @@ public class BoardManager : MonoBehaviour
     [SerializeField] private int _width = 50;
     [SerializeField] private int _height = 40;
 
-    private Vector2 pos = Vector2.zero;
+    private Vector2 _pos = Vector2.zero;
     private GameManager _gameManager;
 
     private void Awake()
@@ -25,8 +25,8 @@ public class BoardManager : MonoBehaviour
     private void InstantiateSnakeHead()
     {
         GameObject snakeHead = Instantiate(_snakeHead);
-        pos = new Vector2(_startingCorner.x + (_width) /2, _startingCorner.y - (_height) /2);
-        snakeHead.transform.position = pos;
+        _pos = new Vector2(_startingCorner.x + (_width) /2, _startingCorner.y - (_height) /2);
+        snakeHead.transform.position = _pos;
 
         _gameManager.AddScreenObject(snakeHead.transform);
     }
@@ -35,23 +35,21 @@ public class BoardManager : MonoBehaviour
     {
         for(int i = 0; i < _height; i++)
         {
-            Vector2 pos = new Vector2(_startingCorner.x, _startingCorner.y - i);
-            DisplayWall(pos);
+            _pos = new Vector2(_startingCorner.x, _startingCorner.y - i);
+            DisplayWall(_pos);
 
-            pos = new Vector2(_startingCorner.x + _width, _startingCorner.y - i);
-            DisplayWall(pos);
+            _pos = new Vector2(_startingCorner.x + _width, _startingCorner.y - i);
+            DisplayWall(_pos);
         }
 
         for(int i=0; i < _width; i++)
         {
-            Vector2 pos = new Vector2(_startingCorner.x + i, _startingCorner.y);
-            DisplayWall(pos);
+            _pos = new Vector2(_startingCorner.x + i, _startingCorner.y);
+            DisplayWall(_pos);
 
-            pos = new Vector2(_startingCorner.x + i, _startingCorner.y - (_height - 1));
-            DisplayWall(pos);
-
+            _pos = new Vector2(_startingCorner.x + i, _startingCorner.y - (_height - 1));
+            DisplayWall(_pos);
         }
-
     }
 
     private void DisplayWall(Vector2 pos)

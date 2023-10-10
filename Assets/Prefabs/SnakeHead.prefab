@@ -157,7 +157,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.98}
+  m_Size: {x: 0.97, y: 0.97}
   m_EdgeRadius: 0
 --- !u!114 &2845541063994162065
 MonoBehaviour:
@@ -172,3 +172,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tailPrefab: {fileID: 1956941341238585552, guid: f8263b70f5a4da349ab3bf0b8e68389f, type: 3}
+  _snakeSpeed: 0.3
