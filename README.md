@@ -5,3 +5,5 @@
 - **Difficulty**: Beginner
 - **Topics**: Grid Movement, UI, Colliders and more
 - **Version**: Unity 2021 (LTS) or greater
+- [**Download**](https://github.com/zigurous/unity-minesweeper-tutorial/archive/refs/heads/main.zip)
+- [**Watch Video**](https://youtu.be/SqFAdLHNkUU)
